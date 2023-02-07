@@ -17,17 +17,19 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 
-app.UseAuthorization();
-app.Environment.EnvironmentName = "Production";
+//app.UseAuthorization();
+//app.Environment.EnvironmentName = "Production";
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
-
 }
 
 app.UseSwagger();
 app.UseSwaggerUI();
+
+app.UseStaticFiles();
+app.UseRouting();
 
 //app
 

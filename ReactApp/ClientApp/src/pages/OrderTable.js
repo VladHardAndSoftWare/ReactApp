@@ -5,12 +5,10 @@ import Table from 'react-bootstrap/Table';
 
 function OrderTable() {
 
-    //1 create useState
     const [orders, setTable] = useState([]);
     const [selectedOrder, setSelectedOrder] = useState(null);
     const [showModal, setShowModal] = useState(false);
 
-    //2 call api
     useEffect(() => {
         fetch("api/order/GetTable")
             .then(response => { return response.json() })
@@ -19,12 +17,10 @@ function OrderTable() {
             })
     }, [])
 
-    // helper function to set selected Order
     const handleRowClick = (order) => {
         setSelectedOrder(order);
     };
 
-    //3.- create div and table
     return (
         <div className="container">
             <legend className="text-center">Таблица заказов</legend>
