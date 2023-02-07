@@ -23,7 +23,7 @@ function OrderCreate() {
         recipientAdress: '',
         weight: 0,
         //orderDate: `${year}${separator}${month < 10 ? `0${month}` : `${month}`}${separator}${date}`,
-        orederDate: ''
+        orderDate: new Date()
     });
     //const [isSwitchChecked, setIsSwitchChecked] = useState(true);
     const [startDate, setStartDate] = useState(new Date());
@@ -92,6 +92,7 @@ function OrderCreate() {
                     <Form.Group className="mb-3" controlId="Date">
                         <Form.Label>Дата забора груза</Form.Label>
                         <DatePicker selected={startDate} onChange={e => { setStartDate(e); setFormData({ ...formData, orderDate: e.target.value }) }} className="form-control" />
+                        {/*<DatePicker selected={startDate} onChange={e => { setStartDate(e); setFormData({ ...formData, orderDate: e.target.value }) }} className="form-control" />*/}
                     </Form.Group>
                     <div class="row">
                         <div class="col text-center">
