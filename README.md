@@ -28,3 +28,12 @@ _____
  ### Установка сайта
  
  Для установки необходимо скачать файлы из папки Run и запустить ReactApp.exe файл
+
+При возникновении ошибки "This app can't run on your PC" требуется скачать файл ReactApp.exe отдельно.
+
+![image](https://user-images.githubusercontent.com/42782084/217264234-3e65c816-b328-4a34-a6e8-5f5d7d646c2c.png)
+
+После запуска программы нужно перейти на указаную в консоли веб страницу.
+
+![image](https://user-images.githubusercontent.com/42782084/217265317-1f18145e-7882-4e9c-8114-f5ff22ab482b.png)
+
